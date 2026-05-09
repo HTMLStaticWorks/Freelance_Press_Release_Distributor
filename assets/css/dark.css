@@ -1,0 +1,49 @@
+body.dark-mode {
+    --bg-color: #020617;
+    --surface-color: #0B1120;
+    --text-primary: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --border-color: #1E293B;
+    --primary-color: #0B1120;
+    --brand-primary: #0B1120;
+    --heading-color: #F8FAFC;
+    --accent-color: #38BDF8;
+}
+
+body.dark-mode .navbar {
+    background: #0B1120;
+}
+
+body.dark-mode .card {
+    background: #0B1120;
+}
+
+body.dark-mode footer {
+    background: #010409;
+}
+
+body.dark-mode .badge-news {
+    background: #1E293B;
+    color: #94A3B8;
+}
+
+body.dark-mode .btn-outline {
+    border-color: #1E293B;
+    color: #E2E8F0;
+}
+
+body.dark-mode .btn-outline:hover {
+    background-color: #1E293B;
+}
+
+body.dark-mode #theme-toggle {
+    color: #E2E8F0;
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication Network | Media Outlets | WirePress</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-broadcast brand-logo-icon"></i>
+                <span class="brand-wire">WIRE</span><span class="brand-press">PRESS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home v1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home v2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="methodology.html">Methodology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="rtl-toggle" class="nav-utility-btn">RTL</button><button id="theme-toggle" class="nav-utility-btn">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <span class="subtitle">Global Distribution Network</span>
+            <h1 class="display-4">Elite Media Placements</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 800px;">Our network spans 5,000+ publications across every major industry and geography.</p>
+        </div>
+    </section>
+
+    <!-- Network Filter -->
+    <section>
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-12">
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <button class="btn btn-sm btn-primary">All Outlets</button>
+                        <button class="btn btn-sm btn-outline-secondary">Tech & SaaS</button>
+                        <button class="btn btn-sm btn-outline-secondary">Finance & Crypto</button>
+                        <button class="btn btn-sm btn-outline-secondary">Health & Bio</button>
+                        <button class="btn btn-sm btn-outline-secondary">Lifestyle & Luxury</button>
+                        <button class="btn btn-sm btn-outline-secondary">Energy & Sustain</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Grid -->
+            <div class="row g-4 stagger-container">
+                <!-- Pub 1 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/wsj/wsj-ar21.svg" alt="WSJ" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Finance & Business</span>
+                    </div>
+                </div>
+                <!-- Pub 2 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/ap/ap-ar21.svg" alt="AP" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Global News</span>
+                    </div>
+                </div>
+                <!-- Pub 3 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/reuters/reuters-ar21.svg" alt="Reuters" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Global News</span>
+                    </div>
+                </div>
+                <!-- Pub 4 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/cnbc/cnbc-ar21.svg" alt="CNBC" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Business & Markets</span>
+                    </div>
+                </div>
+                <!-- Pub 5 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/techcrunch/techcrunch-ar21.svg" alt="TechCrunch" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Tech & Venture</span>
+                    </div>
+                </div>
+                <!-- Pub 6 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/bloomberg/bloomberg-ar21.svg" alt="Bloomberg" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Finance</span>
+                    </div>
+                </div>
+                <!-- Pub 7 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/forbes/forbes-ar21.svg" alt="Forbes" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Business & Leadership</span>
+                    </div>
+                </div>
+                <!-- Pub 8 -->
+                <div class="col-6 col-md-4 col-lg-3 stagger-item">
+                    <div class="card p-4 text-center hover-lift border-0 bg-surface shadow-sm">
+                        <img src="https://www.vectorlogo.zone/logos/nytimes/nytimes-ar21.svg" alt="NYT" class="img-fluid mb-3 grayscale" style="height: 35px;">
+                        <span class="small text-secondary d-block">Global News</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="text-secondary mb-4">Don't see a specific publication? We offer custom media list curation for unique industries.</p>
+                <a href="contact.html" class="btn btn-outline-primary">Inquire About Custom Lists</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Metrics -->
+    <section class="bg-surface py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-5 fw-bold text-accent mb-0">5000+</h2>
+                        <p class="text-secondary small text-uppercase fw-bold tracking-wider">Total Outlets</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-5 fw-bold text-accent mb-0">120+</h2>
+                        <p class="text-secondary small text-uppercase fw-bold tracking-wider">Countries Covered</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-5 fw-bold text-accent mb-0">45M+</h2>
+                        <p class="text-secondary small text-uppercase fw-bold tracking-wider">Monthly Readership</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <h2 class="display-5 fw-bold text-accent mb-0">24/7</h2>
+                        <p class="text-secondary small text-uppercase fw-bold tracking-wider">Monitoring Active</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Reach -->
+    <section class="stagger-container">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="subtitle text-accent">Global Footprint</span>
+                <h2>Strategic Regional Networks</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 stagger-item">
+                    <div class="card p-0 border-0 overflow-hidden bg-surface shadow-sm hover-lift">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600" class="card-img-top" style="height: 200px; object-fit: cover;" alt="North America">
+                        <div class="p-4">
+                            <h5>North America</h5>
+                            <p class="text-secondary small">Direct access to Tier-1 outlets in NYC, Silicon Valley, and Toronto.</p>
+                            <span class="badge bg-light text-primary border">1,200+ Outlets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 stagger-item">
+                    <div class="card p-0 border-0 overflow-hidden bg-surface shadow-sm hover-lift">
+                        <img src="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?auto=format&fit=crop&q=80&w=600" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Europe">
+                        <div class="p-4">
+                            <h5>Europe & UK</h5>
+                            <p class="text-secondary small">Deep integration with major financial and tech hubs across the EU and London.</p>
+                            <span class="badge bg-light text-primary border">950+ Outlets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 stagger-item">
+                    <div class="card p-0 border-0 overflow-hidden bg-surface shadow-sm hover-lift">
+                        <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&q=80&w=600" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Asia Pacific">
+                        <div class="p-4">
+                            <h5>Asia Pacific</h5>
+                            <p class="text-secondary small">Expanding network across Singapore, Tokyo, Sydney, and Hong Kong.</p>
+                            <span class="badge bg-light text-primary border">800+ Outlets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="text-white mb-4">Guaranteed Editorial Integration</h2>
+                    <p class="lead opacity-75 mb-4">We don't just "post" your news; we integrate it into the editorial flow of the world's most respected publications.</p>
+                    <div class="d-flex gap-3 align-items-center mb-3">
+                        <i class="bi bi-patch-check-fill text-accent fs-4"></i>
+                        <span>Native content formatting for each outlet</span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-center mb-3">
+                        <i class="bi bi-patch-check-fill text-accent fs-4"></i>
+                        <span>SEO-rich backlink generation</span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-center">
+                        <i class="bi bi-patch-check-fill text-accent fs-4"></i>
+                        <span>Permanent archival on news servers</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="card bg-surface p-2 rounded-4 shadow reveal-up">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=600" alt="News Archive" class="img-fluid rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="index.html">
+                        <i class="bi bi-broadcast brand-logo-icon"></i>
+                <span class="brand-wire">WIRE</span><span class="brand-press">PRESS</span>
+                    </a>
+                    <p class="text-secondary pe-lg-5">Premium PR distribution and media outreach for the digital-first
+                        enterprise. We bridge the gap between news and narratives.</p>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5>Services</h5>
+                    <ul class="navbar-nav">
+                        <li><a href="services.html" class="nav-link">Wire Distribution</a></li>
+                        <li><a href="services.html" class="nav-link">Media Relations</a></li>
+                        <li><a href="services.html" class="nav-link">Crisis PR</a></li>
+                        <li><a href="services.html" class="nav-link">Social Media Outreach</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5>Resources</h5>
+                    <ul class="navbar-nav">
+                        <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                        <li><a href="publications.html" class="nav-link">Publication List</a></li>
+                        <li><a href="blog.html" class="nav-link">PR Insights Blog</a></li>
+                        <li><a href="methodology.html" class="nav-link">Our Process</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-secondary">Get the latest PR trends and media outreach tips.</p>
+                    <form class="d-flex gap-2 mt-3">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-secondary small">&copy; 2026 WirePress PR. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .grayscale { filter: grayscale(1); transition: filter 0.3s ease; }
+        .card:hover .grayscale { filter: grayscale(0); }
+        
+        body.dark-mode .grayscale { filter: grayscale(1) invert(1); }
+        body.dark-mode .card:hover .grayscale { filter: grayscale(0) invert(0); }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+<script src="assets/js/rtl-toggle.js"></script></body>
+</html>
+
+
+
+
+
+
+
+
