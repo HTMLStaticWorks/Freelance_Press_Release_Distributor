@@ -24,13 +24,32 @@ body {
     overflow-x: hidden;
 }
 
-.text-primary { color: var(--text-primary) !important; }
-.text-secondary { color: var(--text-secondary) !important; }
-.text-accent { color: var(--accent-color) !important; }
-.text-danger { color: #dc3545 !important; }
-.text-success { color: #198754 !important; }
+.text-primary {
+    color: var(--text-primary) !important;
+}
 
-h1, h2, h3, h4, h5, h6 {
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-success {
+    color: #198754 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     color: var(--heading-color);
@@ -56,7 +75,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(var(--accent-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.badge.bg-accent, .bg-accent i:not([class*="text-"]) {
+.badge.bg-accent,
+.bg-accent i:not([class*="text-"]) {
     color: #FFFFFF !important;
 }
 
@@ -66,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--surface-color);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition);
-    z-index: 1100; /* Increased to stay above sticky sidebars */
+    z-index: 1100;
+    /* Increased to stay above sticky sidebars */
 }
 
 .navbar.sticky-top {
@@ -133,26 +154,32 @@ h1, h2, h3, h4, h5, h6 {
         overflow-y: auto;
         display: none;
     }
+
     .navbar-collapse.show {
         display: block !important;
     }
+
     .navbar-nav {
         padding-bottom: 2rem;
         border-bottom: 1px solid var(--border-color);
         margin-bottom: 2rem;
     }
+
     .navbar-nav .nav-link {
         padding: 1.25rem 0 !important;
         font-size: 1.5rem;
         font-weight: 600;
         color: var(--text-primary) !important;
     }
+
     .navbar-nav .nav-link.active {
         color: var(--accent-color) !important;
     }
+
     .nav-utility-btn {
         margin-bottom: 0;
     }
+
     .d-flex.align-items-center.gap-3 {
         flex-direction: row;
         justify-content: center;
@@ -161,7 +188,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Buttons */
-.btn-primary, .btn-outline, .btn-outline-primary {
+.btn-primary,
+.btn-outline,
+.btn-outline-primary {
     padding: 0.75rem 1.5rem;
     font-weight: 600;
     border-radius: 6px;
@@ -173,7 +202,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition);
 }
 
-.btn-sm.btn-primary, .btn-sm.btn-outline, .btn-sm.btn-outline-primary {
+.btn-sm.btn-primary,
+.btn-sm.btn-outline,
+.btn-sm.btn-outline-primary {
     padding: 0.4rem 1rem;
     font-size: 0.875rem;
 }
@@ -369,7 +400,8 @@ body.dark-mode .text-secondary-theme {
 }
 
 /* Forms */
-.form-control, .form-select {
+.form-control,
+.form-select {
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     color: var(--text-primary);
@@ -378,7 +410,8 @@ body.dark-mode .text-secondary-theme {
     transition: var(--transition);
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     background-color: var(--surface-color);
     border-color: var(--accent-color);
     color: var(--text-primary);
@@ -399,7 +432,8 @@ body.dark-mode .text-secondary-theme {
     color: var(--text-secondary);
 }
 
-body.dark-mode .form-control, body.dark-mode .form-select {
+body.dark-mode .form-control,
+body.dark-mode .form-select {
     background-color: #0B1120;
     border-color: #1E293B;
     color: var(--text-primary);
@@ -482,13 +516,15 @@ footer {
     color: var(--text-secondary);
     padding: 80px 0 40px;
     border-top: 1px solid var(--border-color);
-    font-size: 0.95rem; /* Unified font size */
+    font-size: 0.95rem;
+    /* Unified font size */
 }
 
 footer h5 {
     color: var(--heading-color);
     margin-bottom: 1.5rem;
-    font-size: 1.15rem; /* Slightly larger heading */
+    font-size: 1.15rem;
+    /* Slightly larger heading */
 }
 
 footer .nav-link {
@@ -507,18 +543,46 @@ footer p {
 
 /* Enforce font size across all viewports */
 @media (max-width: 1199.98px) {
-    footer, footer p, footer .nav-link {
+
+    footer,
+    footer p,
+    footer .nav-link {
         font-size: 0.95rem !important;
     }
+
     footer {
         text-align: center;
     }
+
+    footer .col-md-4,
+    footer .col-lg-4,
+    footer .col-xl-4 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    footer .col-md-4>h5,
+    footer .col-md-4>ul,
+    footer .col-md-4>p,
+    footer .col-md-4>form,
+    footer .col-lg-4>h5,
+    footer .col-lg-4>ul,
+    footer .col-lg-4>p,
+    footer .col-lg-4>form {
+        text-align: left !important;
+        width: 100% !important;
+        max-width: 260px !important;
+    }
+
+    footer .navbar-nav {
+        align-items: flex-start !important;
+    }
+
     .footer-socials {
         justify-content: center;
     }
-    footer .navbar-nav {
-        align-items: center;
-    }
+
     footer .navbar-brand {
         justify-content: center;
     }
@@ -531,13 +595,16 @@ footer p {
         padding-right: 0.5rem !important;
         font-size: 0.85rem;
     }
+
     .navbar-brand {
         font-size: 1.4rem !important;
     }
+
     .navbar .btn-primary {
         padding: 0.5rem 1rem;
         font-size: 0.85rem;
     }
+
     .nav-utility-btn {
         width: 35px;
         height: 35px;
@@ -658,6 +725,7 @@ footer p {
         border-bottom: 1px solid var(--border-color);
     }
 }
+
 /* Premium Accordion */
 .premium-accordion .accordion-item {
     border: 1px solid var(--border-color);
@@ -697,10 +765,18 @@ footer p {
     line-height: 1.7;
 }
 
-.bg-accent-soft {
-    background-color: rgba(var(--accent-rgb), 0.1) !important;
+.line-height-1 {
+    line-height: 1 !important;
 }
 
-.bg-success-soft {
-    background-color: rgba(25, 135, 84, 0.1) !important;
+.editorial-list-wrapper {
+    display: table;
+}
+
+@media (max-width: 1199.98px) {
+    .editorial-list-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 320px; /* Ensures a consistent block width for alignment */
+    }
 }
