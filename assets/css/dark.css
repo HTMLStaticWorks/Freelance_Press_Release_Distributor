@@ -47,6 +47,18 @@ body.dark-mode .btn-outline:hover {
     box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
 }
 
+body.dark-mode .btn-outline-primary {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: var(--accent-color);
+    color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+}
+
 body.dark-mode #theme-toggle {
     color: #E2E8F0;
 }
@@ -114,4 +126,16 @@ body.dark-mode .text-success { color: #51cf66 !important; }
 body.dark-mode .bg-white, 
 body.dark-mode .bg-light {
     background-color: var(--surface-color) !important;
+}
+
+body.dark-mode .social-icon {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: #0f172a;
+    color: #94A3B8;
+}
+
+body.dark-mode .social-icon:hover {
+    background: var(--accent-color);
+    color: #0f172a !important;
+    border-color: var(--accent-color);
 }
