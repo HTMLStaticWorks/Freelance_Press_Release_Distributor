@@ -8,14 +8,21 @@ body.dark-mode {
     --brand-primary: #0B1120;
     --heading-color: #F8FAFC;
     --accent-color: #38BDF8;
+    --accent-rgb: 56, 189, 248;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color: var(--heading-color) !important;
 }
 
 body.dark-mode .navbar {
-    background: #0B1120;
+    background: var(--surface-color);
 }
 
-body.dark-mode .card {
-    background: #0B1120;
+body.dark-mode .card, body.dark-mode .bg-surface {
+    background: var(--surface-color) !important;
+    color: var(--text-primary) !important;
 }
 
 body.dark-mode footer {
@@ -23,8 +30,8 @@ body.dark-mode footer {
 }
 
 body.dark-mode .badge-news {
-    background: #1E293B;
-    color: #94A3B8;
+    background: var(--border-color);
+    color: var(--text-primary);
 }
 
 body.dark-mode .btn-outline {
@@ -33,7 +40,11 @@ body.dark-mode .btn-outline {
 }
 
 body.dark-mode .btn-outline:hover {
-    background-color: #1E293B;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
 }
 
 body.dark-mode #theme-toggle {
@@ -46,4 +57,61 @@ body.dark-mode .navbar-toggler {
 
 body.dark-mode .navbar-toggler-icon {
     filter: invert(1);
+}
+
+/* Accordion Dark Mode */
+body.dark-mode .accordion-button {
+    color: var(--text-primary);
+    background-color: transparent;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    color: var(--accent-color);
+    background-color: rgba(56, 189, 248, 0.1);
+    box-shadow: inset 0 -1px 0 var(--border-color);
+}
+
+body.dark-mode .accordion-button::after {
+    filter: invert(1) brightness(2);
+}
+
+body.dark-mode .accordion-item {
+    background-color: transparent;
+    border-color: var(--border-color);
+}
+
+body.dark-mode .accordion-body {
+    color: var(--text-secondary);
+}
+
+/* Breadcrumb Dark Mode */
+body.dark-mode .breadcrumb-item a {
+    color: var(--accent-color);
+}
+
+body.dark-mode .breadcrumb-item.active {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-secondary);
+}
+
+/* List Group Dark Mode */
+body.dark-mode .list-group-item {
+    color: var(--text-primary) !important;
+    border-color: var(--border-color);
+}
+
+body.dark-mode hr {
+    border-color: var(--border-color);
+    opacity: 0.3;
+}
+
+body.dark-mode .text-danger { color: #ff6b6b !important; }
+body.dark-mode .text-success { color: #51cf66 !important; }
+
+body.dark-mode .bg-white, 
+body.dark-mode .bg-light {
+    background-color: var(--surface-color) !important;
 }
