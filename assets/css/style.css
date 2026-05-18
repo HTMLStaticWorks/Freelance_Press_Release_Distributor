@@ -249,6 +249,153 @@ h6 {
     box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.2);
 }
 
+/* Hero Section V1 Refinement */
+.hero-section {
+    position: relative;
+    padding: 120px 0 100px;
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(var(--accent-rgb), 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(var(--accent-rgb), 0.06) 0%, transparent 40%),
+        radial-gradient(var(--border-color) 1px, transparent 0);
+    background-size: 100% 100%, 100% 100%, 24px 24px;
+    overflow: hidden;
+}
+
+body.dark-mode .hero-section {
+    background-color: #020617;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(var(--accent-rgb), 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(var(--accent-rgb), 0.12) 0%, transparent 40%),
+        radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+}
+
+.hero-visual-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-visual-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(var(--accent-rgb), 0.15) 0%, transparent 70%);
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.hero-main-img {
+    border: 1px solid var(--border-color);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.hero-main-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .hero-main-img {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Floating Badges for Hero V1 Visual */
+.hero-badge-floating {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+body.dark-mode .hero-badge-floating {
+    background: #0B1120;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+.hero-badge-floating:hover {
+    transform: scale(1.05) translateY(-2px);
+}
+
+.hero-badge-1 {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    animation: float-y 5s ease-in-out infinite alternate;
+}
+
+.hero-badge-2 {
+    position: absolute;
+    bottom: 15%;
+    right: -5%;
+    animation: float-y 6s ease-in-out infinite alternate-reverse;
+}
+
+.hero-badge-3 {
+    position: absolute;
+    bottom: -5%;
+    left: 20%;
+    animation: float-x 7s ease-in-out infinite alternate;
+}
+
+@keyframes float-y {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+
+@keyframes float-x {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(12px); }
+}
+
+.live-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10B981;
+    border-radius: 50%;
+    position: relative;
+}
+
+.live-dot::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #10B981;
+    border-radius: 50%;
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
 /* Sections */
 section {
     padding: 100px 0;
@@ -779,4 +926,45 @@ footer p {
         margin-right: auto;
         max-width: 320px; /* Ensures a consistent block width for alignment */
     }
+}
+
+/* Auth Pages Utility Buttons Positioning */
+.auth-utility-wrapper {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 12px;
+    z-index: 1050;
+}
+
+[dir="rtl"] .auth-utility-wrapper {
+    right: auto;
+    left: 24px;
+}
+
+@media (max-width: 575.98px) {
+    .auth-utility-wrapper {
+        top: 16px;
+        right: 16px;
+        gap: 8px;
+    }
+    [dir="rtl"] .auth-utility-wrapper {
+        right: auto;
+        left: 16px;
+    }
+}
+
+/* Uniform Circular Icon Box Utility */
+.icon-box-circle {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--accent-color) !important;
+    color: #FFFFFF !important;
+    flex-shrink: 0;
+    line-height: 1;
 }
